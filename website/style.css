@@ -1,0 +1,356 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0; /* Removes default margin */
+    padding: 0;
+    background-color: transparent;
+    background-image: url('websitebg2.png');
+    background-size: cover; /* Covers the entire viewport */
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    opacity: 1; /* Start with full opacity */
+    transition: opacity 0.5s ease-in-out;
+    position: relative;
+    z-index: 1; /* Ensures background is behind the content */
+}
+
+body.fade-in {
+    opacity: 1;
+}
+
+
+body.projects-page {
+    background-size: cover; /* Ensures the entire image is visible */
+}
+
+
+
+.page-container {
+    max-width: 800px; /* Maximum width of the content */
+    margin: 0 auto; /* Centering the container */
+    padding: 20px; /* Padding inside the container */
+    background-color: white; /* White background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Drop shadow for 3D effect */
+    border-radius: 15px; /* Rounded corners */
+    text-align: center; /* Center-aligns all content */
+}
+
+
+
+/* Enhanced Header with Subtle Gradient */
+header {
+    background: linear-gradient(135deg, #2c3e50, #1a2533); /* Gradient background */
+    color: white;
+    text-align: center;
+    padding: 1em;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Improved Navigation Styling with Underline Effect */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+    position: relative; /* For underline effect */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding-bottom: 5px; /* Spacing for underline */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover, nav ul li a:focus {
+    color: #ddd;
+    transform: translateY(-2px); /* Subtle lift effect */
+}
+
+/* Underline effect on hover */
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    background-color: white;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+nav ul li a:hover::after, nav ul li a:focus::after {
+    transform: scaleX(1);
+}
+
+/* Main Content Area */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    flex-grow: 1;
+    background: transparent; /* Gradient background */
+}
+
+/* Project Card Styling */
+.project {
+    height: 575px;
+    width: 400px; /* Full width of the parent container */
+    margin: 0px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    background-color: #fff;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    text-align: center;
+    margin-top: auto;
+    display: flex;
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: stretch; /* Stretch children to fill the width */
+}
+
+.project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.7);
+}
+
+.project img {
+    max-height: 100%; /* Adjust as needed */
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: opacity 0.3s ease; /* Smooth transition for images */
+}
+
+/* Project Info Styling */
+.project .info {
+    padding: 15px; /* Adjust the padding as needed */
+    text-align: center;
+    margin: 0.5em 0; /* Maintain existing margins */
+    font-size: 0.5em; /* Keep the existing font size */
+    /* Include any other existing styles here */
+}
+
+
+.project-info {
+    padding: 15px; /* Adjust the padding as needed */
+    text-align: center;
+    margin: 0.5em 0; /* Maintain existing margins */
+    /* Include any other existing styles here */
+}
+
+
+
+.project-info h2 {
+    font-size: 1.2em; /* Smaller font size for the title */
+    /* Other existing styles... */
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+/* Enhanced Footer Styling with Pseudo-elements */
+footer {
+    background: linear-gradient(135deg, #2c3e50, #1a2533); /* Gradient background */
+    color: white;
+    text-align: center;
+    padding: 20;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+    
+}
+
+footer::before, footer::after {
+content: '';
+position: absolute;
+height: 3px;
+bottom: 0;
+width: 50%;
+background: linear-gradient(to right, transparent, #fff);
+}
+
+footer::before {
+left: 0;
+}
+
+footer::after {
+right: 0;
+background: linear-gradient(to left, transparent, #fff);
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+.project {
+width: 100%; /* Full width for smaller screens */
+}
+
+nav ul li {
+    margin: 0 8px;
+}
+
+
+/* Additional God-Level Features /
+/ 1. Smooth Scrolling */
+html {
+scroll-behavior: smooth;
+}
+
+/* 2. Subtle Text Shadows for Improved Readability */
+body {
+text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* 3. Hover Effects for Project Cards */
+.project:hover {
+transform: scale(1.03);
+}
+
+/* 4. Elegant Font Styling for Headings */
+h1, h2 {
+    text-align: center; /* Centers the text */
+    margin-top: 0.5em; /* Uniform top margin */
+    margin-bottom: 0.5em; /* Uniform bottom margin */
+    font-family: 'Playfair Display', serif;
+    color: #2c3e50; /* Adjust the color as needed */
+    font-weight: normal; /* Adjust weight as needed */
+    line-height: 1.2; /* Adjust line height for better readability */
+    /* Add any other styles as needed */
+}
+
+
+.content-area {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10; /* Higher than the background */
+    position: relative;
+    max-width: 800px;
+}
+
+
+/* Additional CSS for About and Contact sections */
+.about-contact-content {
+    text-align: center;
+    margin: auto;
+    max-width: 800px; /* Adjust as needed */
+    /* Additional styling as needed */
+}
+
+
+
+.inner-container {
+    background-color: white; /* White background for the content */
+    padding: 20px; /* Padding inside the content area */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 800px; /* Maximum width of the content */
+    width: 100%; /* Full width within the content area */
+    text-align: center; /* Center text alignment */
+}
+
+
+/* 5. Animated Gradient Background for Body */
+body::before {
+content: '';
+position: fixed;
+top: 0; left: 0;
+width: 100%; height: 100%;
+z-index: -1;
+background: linear-gradient(120deg, #89f7fe, #66a6ff);
+background-size: 200% 200%;
+animation: moveGradient 8s ease infinite;
+}
+
+@keyframes moveGradient {
+0% { background-position: 0% 50%; }
+50% { background-position: 100% 50%; }
+100% { background-position: 0% 50%; }
+}
+
+/* 6. 3D Transform Effect on Hover for Nav Links */
+nav ul li a:hover {
+transform: perspective(500px) rotateY(20deg);
+}
+
+/* 7. CSS Variables for Easy Theme Management */
+:root {
+--primary-color: #2c3e50;
+--secondary-color: #ddd;
+--accent-color: #66a6ff;
+}
+
+/* 8. Dynamic Shadows for Project Cards */
+.project {
+transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* 9. Elegant Drop Caps for Paragraphs */
+p::first-letter {
+float: left;
+font-size: 2.5em;
+line-height: 0.9;
+margin-right: 5px;
+}
+
+
+/* 11. Fullscreen Overlay Menu (example - requires JavaScript to toggle) */
+
+.fullscreen-menu {
+display: none; /* Hidden by default, shown with JavaScript */
+position: fixed;
+top: 0; left: 0;
+width: 100%; height: 100%;
+background: rgba(0, 0, 0, 0.9);
+z-index: 1000;
+text-align: center;
+padding-top: 100px; /* Space for content */
+}
+
+.fullscreen-menu.active {
+display: block; /* Show when active */
+}
+
+.fullscreen-menu ul {
+list-style: none;
+padding: 0;
+}
+
+.fullscreen-menu ul li a {
+color: white;
+font-size: 2em;
+display: block;
+padding: 20px;
+text-decoration: none;
+transition: background-color 0.3s ease;
+}
+
+.fullscreen-menu ul li a:hover {
+background-color: var(--primary-color);
+}
+
+/* 12. Interactive Hover Effects for Images */
+
+.project img:hover {
+filter: brightness(85%); 
+}
+
+.title-long {
+    font-size: 1.2em; /* Smaller font for longer titles */
+}
+
+.title-short {
+    font-size: 1.5em; /* Larger font for shorter titles */
+}
