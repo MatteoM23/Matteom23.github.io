@@ -9,7 +9,7 @@ let projects = [
         title: "Stock Analysis and News API Tool",
         description: "This analyzes stocks to give a bullish, bearish, or neutral position and shows recent news articles about the designated ticker.",
         imageUrl: "2d3dstockimage.png",
-        githubLink: "https://github.com/example/project1"
+        githubLink: "https://github.com/MatteoM23/YahoofinanceDataScraper"
     },
     {
         title: "Calculator",
