@@ -1,55 +1,44 @@
 document.addEventListener('DOMContentLoaded', () => {
     loadProjects();
-    document.body.classList.add('fade-in');
+    document.body.classList.add('fade-in'); // Fade-in effect on load
 });
 
-
-let projects = [
+const projects = [
     {
         title: "Stock Analysis and News API Tool",
-        description: "This analyzes stocks to give a bullish, bearish, or neutral position and shows recent news articles about the designated ticker.",
+        description: "This tool analyzes stocks and provides a bullish, bearish, or neutral outlook with recent news articles.",
         imageUrl: "2d3dstockimage.png",
         githubLink: "https://github.com/MatteoM23/YahoofinanceDataScraper"
     },
     {
         title: "Calculator",
-        description: "This is a basic calculator I designed using the python coding language.",
+        description: "A simple calculator designed using Python.",
         imageUrl: "calculator.png",
         githubLink: "https://github.com/example/project2"
-    },
-    // ... other projects ...
+    }
+    // Add more projects as needed
 ];
 
 function loadProjects() {
-    const container = document.getElementById('project-container');
+    const container = document.querySelector('.portfolio-grid');
     if (container) {
         projects.forEach(project => {
-            container.appendChild(createProjectElement(project));
+            const projectElement = createProjectElement(project);
+            container.appendChild(projectElement);
         });
     }
 }
 
 function createProjectElement(project) {
-    const element = document.createElement('div');
-    element.className = 'project';
-    const titleClass = project.title.length > 25 ? 'title-long' : 'title-short';
-    element.innerHTML = `
+    const projectCard = document.createElement('article');
+    projectCard.classList.add('project-card');
+    projectCard.innerHTML = `
         <img src="${project.imageUrl}" alt="${project.title}">
         <div class="project-info">
-            <h2 class="${titleClass}">${project.title}</h2>
+            <h2>${project.title}</h2>
             <p>${project.description}</p>
             <a href="${project.githubLink}" target="_blank" rel="noopener noreferrer">View on GitHub</a>
         </div>
     `;
-    return element;
-}
-
-
-function truncateTitle(title, maxLength = 25) {
-    if (title.length > maxLength) {
-        const truncated = title.substring(0, maxLength) + '...';
-        console.log(`Truncated title: ${truncated}`); // Debugging
-        return truncated;
-    }
-    return title;
+    return projectCard;
 }
