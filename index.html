@@ -3,73 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Showcase</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Matteo Michitti's Portfolio showcasing projects in web development, AI, and software engineering.">
+    <meta name="keywords" content="portfolio, web development, AI, projects, github, software engineering">
+    <meta name="author" content="Matteo Michitti">
+    
+    <title>Matteo Michitti Portfolio Showcase</title>
+    
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Link to CSS -->
     <link rel="stylesheet" href="style.css">
+    
+    <!-- Favicon for the website -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body class="projects-page">
     <header>
         <nav>
-            <ul>
+            <ul class="navigation-menu">
                 <li><a href="#portfolio-section">Projects</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <main id="project-container">
-        <div class="project">
-            <img src="weatherporfolioimage.png" alt="Project Title">
-            <div class="project-info">
-                <h2>Weather App</h2>
-                <p>This is a weatherapp that uses an api to fetch the weather data for any city requested</p>
-                <a href="https://github.com/MatteoM23/Weatherapp" target="_blank">View on GitHub</a>
-            </div>
-        </div>
-                <div class="project">
-            <img src="randompasswordgenpic.png" alt="Project Title">
-            <div class="project-info">
-                <h2>Random Password Generator</h2>
-                <p>An advanced random password generator that creates complex passwords in one click</p>
-                <a href="https://github.com/MatteoM23/AdvancedPasswordGenerator" target="_blank">View on GitHub</a>
-            </div>
-        </div>
-        <div class="project">
-            <img src="path_to_project_image.jpg" alt="Project Title">
-            <div class="project-info">
-                <h2>Project Title</h2>
-                <p>Project Description</p>
-                <a href="https://github.com/yourusername/project-repo" target="_blank">View on GitHub</a>
-            </div>
-        </div>
-        <div class="project">
-            <img src="path_to_project_image.jpg" alt="Project Title">
-            <div class="project-info">
-                <h2>Project Title</h2>
-                <p>Project Description</p>
-                <a href="https://github.com/yourusername/project-repo" target="_blank">View on GitHub</a>
-            </div>
-        </div>
-        <div class="project">
-            <img src="path_to_project_image.jpg" alt="Project Title">
-            <div class="project-info">
-                <h2>Project Title</h2>
-                <p>Project Description</p>
-                <a href="https://github.com/yourusername/project-repo" target="_blank">View on GitHub</a>
-            </div>
-        </div>
-        <div class="project">
-            <img src="path_to_project_image.jpg" alt="Project Title">
-            <div class="project-info">
-                <h2>Project Title</h2>
-                <p>Project Description</p>
-                <a href="https://github.com/yourusername/project-repo" target="_blank">View on GitHub</a>
-            </div>
-        </div>
+
+    <main id="portfolio-section">
+        <section class="portfolio-grid">
+            <!-- Project: Weather App -->
+            <article class="project-card">
+                <img src="weatherporfolioimage.png" alt="Weather App Project">
+                <div class="project-info">
+                    <h2>Weather App</h2>
+                    <p>A weather app that fetches live weather data from an API for any city.</p>
+                    <a href="https://github.com/MatteoM23/Weatherapp" target="_blank" class="github-link">View on GitHub</a>
+                </div>
+            </article>
+
+            <!-- Project: Random Password Generator -->
+            <article class="project-card">
+                <img src="randompasswordgenpic.png" alt="Random Password Generator">
+                <div class="project-info">
+                    <h2>Random Password Generator</h2>
+                    <p>An advanced tool that generates complex passwords with a single click.</p>
+                    <a href="https://github.com/MatteoM23/AdvancedPasswordGenerator" target="_blank" class="github-link">View on GitHub</a>
+                </div>
+            </article>
+
+            <!-- Add more projects here -->
+            <article class="project-card">
+                <img src="path_to_project_image.jpg" alt="Sample Project">
+                <div class="project-info">
+                    <h2>Project Title</h2>
+                    <p>Brief description of the project goes here.</p>
+                    <a href="https://github.com/yourusername/project-repo" target="_blank" class="github-link">View on GitHub</a>
+                </div>
+            </article>
+
+            <!-- You can duplicate the article tag for more projects -->
+        </section>
     </main>
+
     <footer>
-        <p>&copy; 2024 My Portfolio</p>
+        <p>&copy; 2024 Matteo Michitti Portfolio | <a href="privacy-policy.html">Privacy Policy</a></p>
     </footer>
+
+    <!-- Optional JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
