@@ -3,15 +3,27 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('A_minimalistic,_abstract_background_designed_for_a.png');
-    background-size: cover;
-    background-position: center;
-    color: #333;
+    background-image: url('websitebg.webp');
+    background-size: cover; /* Ensure the background covers the entire screen */
+    background-position: center center; /* Centers the background image */
+    background-attachment: fixed; /* Keeps the background fixed while content scrolls */
+    background-repeat: no-repeat;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    opacity: 1;
-    transition: opacity 0.5s ease-in-out;
+    color: #333;
+}
+
+.page-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Slight white transparency behind content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    text-align: center;
+    z-index: 1;
+    position: relative;
 }
 
 /* Header Styling */
@@ -124,13 +136,13 @@ nav ul li a:hover {
 
 /* Footer Styling */
 footer {
-    background: linear-gradient(135deg, #2c3e50, #1a2533);
+    background: rgba(44, 62, 80, 0.9); /* Add slight transparency to footer */
     color: white;
     text-align: center;
     padding: 20px;
     box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
     position: relative;
-    z-index: 1;
+    z-index: 2; /* Ensure footer is above the background */
 }
 
 footer a {
