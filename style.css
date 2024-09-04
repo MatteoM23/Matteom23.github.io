@@ -4,26 +4,14 @@ body {
     margin: 0;
     padding: 0;
     background-image: url('websitebg.webp');
-    background-size: cover; /* Ensure the background covers the entire screen */
-    background-position: center center; /* Centers the background image */
-    background-attachment: fixed; /* Keeps the background fixed while content scrolls */
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
     background-repeat: no-repeat;
-    min-height: 100vh;
+    color: #333;
     display: flex;
     flex-direction: column;
-    color: #333;
-}
-
-.page-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.9); /* Slight white transparency behind content */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 15px;
-    text-align: center;
-    z-index: 1;
-    position: relative;
+    min-height: 100vh;
 }
 
 /* Header Styling */
@@ -38,7 +26,6 @@ header {
     z-index: 10;
 }
 
-/* Navigation Menu Styling */
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -65,7 +52,7 @@ nav ul li a:hover {
 /* Portfolio Section Grid */
 .portfolio-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Reduced the min-width to 250px */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
     padding: 40px;
     max-width: 1200px;
@@ -77,22 +64,22 @@ nav ul li a:hover {
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Initial shadow is more subtle */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Initial subtle shadow */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer; /* Changes the cursor to indicate interactivity */
+    cursor: pointer;
 }
 
 .project-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4); /* Enhanced shadow effect on hover */
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4); /* Enhanced shadow on hover */
 }
 
 /* Project Image */
 .project-card img {
     width: 100%;
-    height: 200px; /* Set a fixed height for the image to avoid overly large images */
-    object-fit: cover;
-    transition: transform 0.3s ease, filter 0.3s ease; /* Added transform for hover effect */
+    height: 180px; /* Reduced height to avoid zooming */
+    object-fit: contain; /* Ensure images are not zoomed or cropped */
+    transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 .project-card:hover img {
@@ -136,13 +123,16 @@ nav ul li a:hover {
 
 /* Footer Styling */
 footer {
-    background: rgba(44, 62, 80, 0.9); /* Add slight transparency to footer */
+    background: linear-gradient(135deg, #2c3e50, #1a2533);
     color: white;
     text-align: center;
     padding: 20px;
     box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
-    position: relative;
-    z-index: 2; /* Ensure footer is above the background */
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
 }
 
 footer a {
@@ -152,6 +142,15 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+/* Flexbox Adjustment to Make Footer Stick to the Bottom */
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Responsive Design */
