@@ -53,7 +53,7 @@ nav ul li a:hover {
 /* Portfolio Section Grid */
 .portfolio-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Reduced the min-width to 250px */
     gap: 20px;
     padding: 40px;
     max-width: 1200px;
@@ -65,20 +65,27 @@ nav ul li a:hover {
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Initial shadow is more subtle */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer; /* Changes the cursor to indicate interactivity */
 }
 
 .project-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4); /* Enhanced shadow effect on hover */
 }
 
 /* Project Image */
 .project-card img {
     width: 100%;
-    height: auto;
+    height: 200px; /* Set a fixed height for the image to avoid overly large images */
     object-fit: cover;
+    transition: transform 0.3s ease, filter 0.3s ease; /* Added transform for hover effect */
+}
+
+.project-card:hover img {
+    transform: scale(1.05); /* Smooth zoom-in on hover */
+    filter: brightness(90%); /* Slightly darkens the image on hover */
 }
 
 /* Project Info */
@@ -107,11 +114,12 @@ nav ul li a:hover {
     color: white;
     border-radius: 5px;
     text-decoration: none;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .project-info a:hover {
     background-color: #66a6ff;
+    transform: scale(1.05); /* Slightly scales up the button on hover */
 }
 
 /* Footer Styling */
@@ -132,11 +140,6 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
-}
-
-/* Fade-in Effect for Body */
-body.fade-in {
-    opacity: 1;
 }
 
 /* Responsive Design */
