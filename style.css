@@ -1,14 +1,14 @@
-/* Load the Cyber Gloom Regular font */
+/* Load the Cyber Gloom font */
 @font-face {
-    font-family: 'Cyber Gloom Regular'; /* This matches the Windows font name */
-    src: url('cybergloom.otf') format('opentype'); /* Ensure correct file name */
+    font-family: 'Cyber Gloom'; /* Use the exact name */
+    src: url('cybergloom.otf') format('opentype'); /* Ensure correct file name and path */
     font-weight: normal;
     font-style: normal;
 }
 
-/* Use the Cyber Gloom Regular font for the Portfolio name */
+/* Use the Cyber Gloom font for the Portfolio name */
 .portfolio-link {
-    font-family: 'Cyber Gloom Regular', sans-serif; /* Apply the exact font name */
+    font-family: 'Cyber Gloom', sans-serif; /* Match the exact font-family name */
     font-size: 2.2em;
     text-transform: uppercase;
     color: yellow;
@@ -17,14 +17,12 @@
     text-shadow: 0 0 10px rgba(255, 255, 0, 0.8), 0 0 20px rgba(255, 255, 0, 0.6), 0 0 30px rgba(255, 255, 0, 0.4);
 }
 
+
 .portfolio-link:hover {
     color: #fff; /* Change color on hover for contrast */
-    text-shadow: 0 0 15px rgba(102, 166, 255, 1), /* Glowing blue on hover */
-                 0 0 30px rgba(102, 166, 255, 0.8),
-                 0 0 45px rgba(102, 166, 255, 0.6);
+    text-shadow: 0 0 15px rgba(102, 166, 255, 1), 0 0 30px rgba(102, 166, 255, 0.8), 0 0 45px rgba(102, 166, 255, 0.6);
     transform: scale(1.05); /* Slight scaling on hover for a 3D effect */
 }
-
 
 /* General Body Styling */
 body {
@@ -71,20 +69,6 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #66a6ff;
-}
-
-/* Use Cyber Trunk Font for Portfolio Name */
-.portfolio-link {
-    font-family: 'Cyber Trunk', sans-serif; /* Use the Cyber Trunk font */
-    font-size: 1.8em;
-    text-transform: uppercase;
-    color: white;
-    text-decoration: none;
-    letter-spacing: 2px; /* Adds spacing for a futuristic look */
-}
-
-.portfolio-link:hover {
     color: #66a6ff;
 }
 
