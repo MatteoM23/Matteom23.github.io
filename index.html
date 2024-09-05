@@ -62,7 +62,13 @@
     </main>
 
     <footer>
-        <p>&copy; 2024 Matteo Michitti Portfolio | <a href="privacy-policy.html">Privacy Policy</a></p>
-    </footer>
+    <p>&copy; <span id="dynamicYear"></span> Matteo Michitti Portfolio | <a href="privacy-policy.html">Privacy Policy</a></p>
+</footer>
+
+<script>
+    // Dynamically set the current year in the footer
+    document.getElementById('dynamicYear').textContent = new Date().getFullYear();
+</script>
+
 </body>
 </html>
