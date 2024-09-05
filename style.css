@@ -1,5 +1,10 @@
-/* Import Google Fonts in CSS */
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Playfair+Display:wght@400;700&family=Roboto:wght@400;700&display=swap');
+/* Load the Cyber Trunk Font */
+@font-face {
+    font-family: 'Cyber Trunk';
+    src: url('Cyber Trunk.otf') format('opentype'); /* Ensure the correct path to the font */
+    font-weight: normal;
+    font-style: normal;
+}
 
 /* General Body Styling */
 body {
@@ -49,10 +54,9 @@ nav ul li a:hover {
     color: #66a6ff;
 }
 
-/* Cybertruck-Themed Font for Portfolio Link */
+/* Use Cyber Trunk Font for Portfolio Name */
 .portfolio-link {
-    font-family: 'Orbitron', sans-serif; /* Orbitron font for Cybertruck aesthetic */
-    font-weight: 700;
+    font-family: 'Cyber Trunk', sans-serif; /* Use the Cyber Trunk font */
     font-size: 1.8em;
     text-transform: uppercase;
     color: white;
