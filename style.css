@@ -58,21 +58,23 @@ nav ul li {
     margin: 0 20px;
 }
 
-/* Modern Button-Style Navigation with Google-like Effect */
+/* Filled Blue Button Style with White Text */
 nav ul li a {
     padding: 10px 20px;
     color: white;
     text-decoration: none;
     font-weight: 700;
-    border: 2px solid #4285f4; /* Google-like dark blue */
+    background-color: #4285f4; /* Google-like dark blue */
+    border: 2px solid #4285f4;
     border-radius: 5px;
     transition: all 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #fff; /* Text remains white on hover */
-    background-color: rgba(66, 133, 244, 0.1); /* Light blue fill effect on hover */
-    border-color: #4285f4; /* Keeps the dark blue border */
+    background-color: #0a62c3; /* Darker blue on hover */
+    color: white;
+    font-weight: bold; /* Slightly bold on hover */
+    transform: scale(1.02); /* Slight increase on hover */
 }
 
 /* Main Content Styling */
