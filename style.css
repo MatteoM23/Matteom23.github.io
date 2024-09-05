@@ -39,27 +39,30 @@ body {
     min-height: 100vh;
 }
 
-/* White Background for Landing Page */
-.landing-container {
-    background-color: white;
-    padding: 80px 20px;
-    text-align: center;
+/* White Background for Content Sections */
+.page-container {
+    background-color: rgba(255, 255, 255, 0.9); /* Slight transparency for a clean look */
+    padding: 40px 20px;
     color: #333;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px; /* Center the content */
+    margin: 40px auto;
+    text-align: center;
 }
 
-.landing-container h1 {
-    font-size: 3em;
+.page-container h1 {
+    font-size: 2.5em;
     font-family: 'Playfair Display', serif;
-    margin-bottom: 20px;
     color: #2c3e50;
+    margin-bottom: 20px;
 }
 
-.landing-container p {
+.page-container p {
     font-size: 1.2em;
-    margin-bottom: 40px;
     font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #555;
 }
 
 /* Button Styling for Landing Page */
@@ -67,6 +70,7 @@ body {
     display: flex;
     gap: 20px;
     justify-content: center;
+    margin-top: 30px;
 }
 
 .landing-btn {
@@ -88,13 +92,33 @@ body {
 
 /* Solid Black Header and Footer */
 header {
-    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.9); /* Solid black for header */
     padding: 1em 2em;
     display: flex;
     justify-content: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
+footer {
+    background-color: rgba(0, 0, 0, 0.9); /* Solid black for footer */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    position: relative;
+}
+
+footer a {
+    color: #66a6ff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Navigation Bar Styling */
 nav ul {
     list-style-type: none;
     display: flex;
@@ -187,27 +211,6 @@ nav ul li a:hover {
 .project-info a:hover {
     background-color: #00d1ff;
     transform: scale(1.05);
-}
-
-/* Footer Styling */
-footer {
-    background-color: #000;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
-    width: 100%;
-    position: relative;
-    z-index: 2;
-}
-
-footer a {
-    color: #66a6ff;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
 }
 
 /* Sticky Footer Adjustment */
