@@ -1,6 +1,6 @@
 /* Load the Cyber Gloom font */
 @font-face {
-    font-family: 'Cyber Gloom'; /* Use the exact name */
+    font-family: 'Cyber Gloom';
     src: url('cybergloom.otf') format('opentype'); /* Ensure correct file name and path */
     font-weight: normal;
     font-style: normal;
@@ -8,20 +8,18 @@
 
 /* Use the Cyber Gloom font for the Portfolio name */
 .portfolio-link {
-    font-family: 'Cyber Gloom', sans-serif; /* Match the exact font-family name */
+    font-family: 'Cyber Gloom', sans-serif; /* Apply the exact font name */
     font-size: 2.2em;
     text-transform: uppercase;
-    color: yellow;
+    color: white; /* White text color */
     text-decoration: none;
     letter-spacing: 3px; /* Adds more spacing for a futuristic look */
-    text-shadow: 0 0 10px rgba(255, 255, 0, 0.8), 0 0 20px rgba(255, 255, 0, 0.6), 0 0 30px rgba(255, 255, 0, 0.4);
+    transition: color 0.4s ease, transform 0.4s ease; /* Smooth transition */
 }
 
-
 .portfolio-link:hover {
-    color: #fff; /* Change color on hover for contrast */
-    text-shadow: 0 0 15px rgba(102, 166, 255, 1), 0 0 30px rgba(102, 166, 255, 0.8), 0 0 45px rgba(102, 166, 255, 0.6);
-    transform: scale(1.05); /* Slight scaling on hover for a 3D effect */
+    color: #00d1ff; /* Futuristic light blue color on hover */
+    transform: translateY(-3px); /* Subtle lift effect */
 }
 
 /* General Body Styling */
@@ -41,6 +39,12 @@ body {
 }
 
 /* Navigation Bar Styling */
+header {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+    padding: 1em 2em;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -48,8 +52,6 @@ nav ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(44, 62, 80, 0.9); /* Slight transparency on the navbar */
-    padding: 1em 2em;
 }
 
 nav ul li {
@@ -157,34 +159,9 @@ main {
     transform: scale(1.05);
 }
 
-/* Text Sections Floating White Background */
-.page-container {
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    max-width: 800px;
-    margin: 20px auto;
-    text-align: center;
-}
-
-.page-container h1 {
-    font-family: 'Playfair Display', serif;
-    color: #2c3e50;
-    margin-bottom: 20px;
-    font-size: 2em;
-}
-
-.page-container p {
-    font-family: 'Roboto', sans-serif;
-    color: #555;
-    font-size: 1.1em;
-    line-height: 1.6;
-}
-
 /* Footer Styling */
 footer {
-    background: linear-gradient(135deg, #2c3e50, #1a2533);
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
     color: white;
     text-align: center;
     padding: 20px;
