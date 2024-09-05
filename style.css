@@ -1,7 +1,7 @@
 /* Load the Cyber Trunk Font from the root directory */
 @font-face {
-    font-family: 'Cyber Trunk';
-    src: url('Cyber Trunk.otf') format('opentype'); /* No folder, direct path */
+    font-family: 'Cyber gloom.otf';
+    src: url('Cyber gloom.otf') format('opentype'); /* No folder, direct path */
     font-weight: normal;
     font-style: normal;
 }
