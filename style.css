@@ -8,10 +8,10 @@
 
 /* Use the Cyber Trunk font for the Portfolio name */
 .portfolio-link {
-    font-family: 'Cyber Trunk', sans-serif; /* Apply the custom font */
+    font-family: 'Cyber Gloom', sans-serif; /* Apply the custom font */
     font-size: 1.8em;
     text-transform: uppercase;
-    color: white;
+    color: Yellow;
     text-decoration: none;
     letter-spacing: 2px; /* Adds spacing for a futuristic look */
 }
