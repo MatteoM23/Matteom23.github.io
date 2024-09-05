@@ -1,24 +1,22 @@
 /* Load the Cyber Gloom Font from the root directory */
 @font-face {
     font-family: 'Cyber Gloom';
-    src: url('Cyber gloom.otf') format('opentype'); /* Ensure correct file name and path */
+    src: url('Cyber gloom.otf') format('opentype'); /* Ensure correct file name */
     font-weight: normal;
     font-style: normal;
 }
 
-/* Use the Cyber Gloom font for the Portfolio name with a futuristic, glowing effect */
+/* Use the Cyber Gloom font for the Portfolio name */
 .portfolio-link {
-    font-family: 'Cyber Gloom', sans-serif; /* Apply the Cyber Gloom font */
-    font-size: 2.2em; /* Slightly larger for emphasis */
+    font-family: 'Cyber Gloom', sans-serif; /* Apply the custom font */
+    font-size: 2.2em;
     text-transform: uppercase;
     color: yellow;
     text-decoration: none;
-    letter-spacing: 3px; /* Adds more spacing for a futuristic look */
-    text-shadow: 0 0 10px rgba(255, 255, 0, 0.8), /* Glowing yellow effect */
-                 0 0 20px rgba(255, 255, 0, 0.6),
-                 0 0 30px rgba(255, 255, 0, 0.4);
-    transition: text-shadow 0.4s ease, transform 0.4s ease; /* Smooth hover transition */
+    letter-spacing: 3px;
+    text-shadow: 0 0 10px rgba(255, 255, 0, 0.8), 0 0 20px rgba(255, 255, 0, 0.6), 0 0 30px rgba(255, 255, 0, 0.4);
 }
+
 
 .portfolio-link:hover {
     color: #fff; /* Change color on hover for contrast */
