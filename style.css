@@ -1,24 +1,33 @@
-/* Load the Cyber Trunk Font from the root directory */
+/* Load the Cyber Gloom Font from the root directory */
 @font-face {
-    font-family: 'Cyber gloom.otf';
+    font-family: 'Cyber Gloom';
     src: url('Cyber gloom.otf') format('opentype'); /* No folder, direct path */
     font-weight: normal;
     font-style: normal;
 }
 
-/* Use the Cyber Trunk font for the Portfolio name */
+/* Use the Cyber Gloom font for the Portfolio name with a futuristic, glowing effect */
 .portfolio-link {
     font-family: 'Cyber Gloom', sans-serif; /* Apply the custom font */
-    font-size: 1.8em;
+    font-size: 2.2em; /* Slightly larger for emphasis */
     text-transform: uppercase;
-    color: Yellow;
+    color: yellow;
     text-decoration: none;
-    letter-spacing: 2px; /* Adds spacing for a futuristic look */
+    letter-spacing: 3px; /* Adds more spacing for a futuristic look */
+    text-shadow: 0 0 10px rgba(255, 255, 0, 0.8), /* Glowing yellow effect */
+                 0 0 20px rgba(255, 255, 0, 0.6),
+                 0 0 30px rgba(255, 255, 0, 0.4);
+    transition: text-shadow 0.4s ease, transform 0.4s ease; /* Smooth hover transition */
 }
 
 .portfolio-link:hover {
-    color: #66a6ff;
+    color: #fff; /* Change color on hover for contrast */
+    text-shadow: 0 0 15px rgba(102, 166, 255, 1), /* Glowing blue on hover */
+                 0 0 30px rgba(102, 166, 255, 0.8),
+                 0 0 45px rgba(102, 166, 255, 0.6);
+    transform: scale(1.05); /* Slight scaling on hover for a 3D effect */
 }
+
 
 
 /* General Body Styling */
