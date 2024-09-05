@@ -14,13 +14,16 @@
     color: white;
     text-decoration: none;
     letter-spacing: 3px;
-    transition: color 0.4s ease, transform 0.4s ease;
+    border: 2px solid transparent; /* Initially no border */
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .portfolio-link:hover {
-    border: 2px solid #4285f4; /* Blue border outline when hovered */
-    color: white; /* Text stays white */
-    background-color: transparent; /* No fill in background */
+    background-color: #4285f4; /* Blue background on hover */
+    color: white;
+    border-color: #4285f4;
 }
 
 /* General Body Styling */
@@ -137,7 +140,7 @@ nav ul li a {
     font-weight: 700;
     border: 2px solid transparent;
     border-radius: 5px;
-    transition: all 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 nav ul li a:hover {
@@ -197,20 +200,23 @@ nav ul li a:hover {
     color: #555;
 }
 
+/* GitHub Buttons */
 .project-info a {
     display: inline-block;
     margin-top: 10px;
     padding: 10px 15px;
-    background-color: #2c3e50;
+    background-color: transparent;
     color: white;
     border-radius: 5px;
     text-decoration: none;
+    border: 2px solid #4285f4; /* Blue border for consistency */
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .project-info a:hover {
-    background-color: #00d1ff;
+    background-color: #4285f4;
     transform: scale(1.05);
+    color: white; /* Keep text white on hover */
 }
 
 /* Sticky Footer Adjustment */
