@@ -21,19 +21,17 @@
 </head>
 <body class="projects-page">
     <header>
-    <nav>
-        <ul class="navigation-menu">
-            <li class="nav-logo">
-                <a href="https://matteom23.github.io/" class="portfolio-link">Matteo Michitti Portfolio</a>
-            </li>
-            <li><a href="index.html">Projects</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+        <nav>
+            <ul class="navigation-menu">
+                <li class="nav-logo">
+                    <a href="https://matteom23.github.io/" class="portfolio-link">Matteo Michitti Portfolio</a>
+                </li>
+                <li><a href="index.html">Projects</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-
-
 
     <main id="portfolio-section">
         <section class="portfolio-grid page-container">
@@ -63,17 +61,27 @@
                     <a href="https://github.com/MatteoM23/YahoofinanceDataScraper" target="_blank" class="github-link">View on GitHub</a>
                 </div>
             </article>
+
+            <!-- New Physics Simulator Project -->
+            <article class="project-card">
+                <img src="physicssimulatorimage.png" alt="Physics Simulator">
+                <div class="project-info">
+                    <h2>Physics Simulator</h2>
+                    <p>This project simulates physics interactions in a 2D environment using JavaScript. Explore the forces and movements in a visually engaging simulation.</p>
+                    <a href="https://main--physicssim.netlify.app/" target="_blank" class="github-link">View on Netlify</a>
+                    <a href="https://github.com/MatteoM23/PhysicsSimulator" target="_blank" class="github-link">View on GitHub</a>
+                </div>
+            </article>
         </section>
     </main>
 
     <footer>
-    <p>&copy; <span id="dynamicYear"></span> Matteo Michitti Portfolio | <a href="privacy-policy.html">Privacy Policy</a></p>
-</footer>
+        <p>&copy; <span id="dynamicYear"></span> Matteo Michitti Portfolio | <a href="privacy-policy.html">Privacy Policy</a></p>
+    </footer>
 
-<script>
-    // Dynamically set the current year in the footer
-    document.getElementById('dynamicYear').textContent = new Date().getFullYear();
-</script>
-
+    <!-- JavaScript to dynamically update the year in the footer -->
+    <script>
+        document.getElementById('dynamicYear').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
