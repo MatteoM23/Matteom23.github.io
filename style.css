@@ -1,7 +1,7 @@
 /* Load the Cyber Gloom Regular font */
 @font-face {
     font-family: 'Cyber Gloom Regular'; /* This matches the Windows font name */
-    src: url('Cyber gloom.otf') format('opentype'); /* Ensure correct file name */
+    src: url('cybergloom.otf') format('opentype'); /* Ensure correct file name */
     font-weight: normal;
     font-style: normal;
 }
