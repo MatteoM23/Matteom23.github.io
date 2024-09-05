@@ -1,6 +1,13 @@
+/* Import Orbitron for Cybertruck-themed Font */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+/* Import Roboto for clean, modern look */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+/* Import Playfair Display for elegant headings */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
 /* General Body Styling */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif; /* Base font for body text */
     margin: 0;
     padding: 0;
     background-image: url('websitebg.webp');
@@ -14,40 +21,25 @@ body {
     min-height: 100vh;
 }
 
-/* Main Content Styling */
-main {
-    flex-grow: 1; /* This allows the main content to take up the remaining space */
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-/* Header Styling */
-header {
-    background: linear-gradient(135deg, #2c3e50, #1a2533);
-    color: white;
-    text-align: center;
-    padding: 1.5em;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
-    position: sticky;
-    top: 0;
-    z-index: 10;
-}
-
+/* Navigation Bar Styling */
 nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(44, 62, 80, 0.9); /* Slight transparency on the navbar */
+    padding: 1em 2em;
 }
 
 nav ul li {
     margin: 0 20px;
+}
+
+nav ul li.nav-logo {
+    margin-left: 0;
+    margin-right: auto;
 }
 
 nav ul li a {
@@ -59,6 +51,32 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #66a6ff;
+}
+
+/* Cybertruck-Themed Font for Portfolio Link */
+.portfolio-link {
+    font-family: 'Orbitron', sans-serif; /* Orbitron font for Cybertruck aesthetic */
+    font-size: 1.8em;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 2px; /* Adds spacing for a futuristic look */
+}
+
+.portfolio-link:hover {
+    color: #66a6ff;
+}
+
+/* Main Content Styling */
+main {
+    flex-grow: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 /* Portfolio Section Grid */
@@ -74,21 +92,23 @@ nav ul li a:hover {
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Initial subtle shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
+    padding-top: 15px;
 }
 
 .project-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4); /* Enhanced shadow on hover */
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4);
 }
 
 /* Project Image */
 .project-card img {
     width: 100%;
     height: 180px;
-    object-fit: contain;
+    object-fit: cover;
+    border-radius: 15px; /* Rounded corners for the image */
     transition: transform 0.3s ease, filter 0.3s ease;
 }
 
@@ -104,13 +124,14 @@ nav ul li a:hover {
 }
 
 .project-info h2 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Playfair Display', serif; /* Elegant heading font */
     font-size: 1.5em;
     margin-bottom: 10px;
     color: #2c3e50;
 }
 
 .project-info p {
+    font-family: 'Roboto', sans-serif; /* Clean body text font */
     font-size: 1em;
     color: #555;
 }
@@ -129,6 +150,31 @@ nav ul li a:hover {
 .project-info a:hover {
     background-color: #66a6ff;
     transform: scale(1.05);
+}
+
+/* Text Sections Floating White Background */
+.page-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.page-container h1 {
+    font-family: 'Playfair Display', serif;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.page-container p {
+    font-family: 'Roboto', sans-serif;
+    color: #555;
+    font-size: 1.1em;
+    line-height: 1.6;
 }
 
 /* Footer Styling */
@@ -154,7 +200,7 @@ footer a:hover {
 
 /* Sticky Footer Adjustment */
 html, body {
-    height: 100%; /* Ensure body and html take full height */
+    height: 100%;
 }
 
 body {
@@ -163,7 +209,7 @@ body {
 }
 
 footer {
-    margin-top: auto; /* Pushes footer to the bottom */
+    margin-top: auto;
 }
 
 /* Responsive Design */
