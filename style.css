@@ -1,21 +1,21 @@
+/* Load the Cyber Gloom Regular font */
 @font-face {
-    font-family: 'Cyber Gloom';
-    src: url('cybergloom.otf') format('opentype');
+    font-family: 'Cyber Gloom Regular'; /* This matches the Windows font name */
+    src: url('Cyber gloom.otf') format('opentype'); /* Ensure correct file name */
+    font-weight: normal;
+    font-style: normal;
 }
 
-
-/* Use the Cyber Gloom font for the Portfolio name */
+/* Use the Cyber Gloom Regular font for the Portfolio name */
 .portfolio-link {
-    font-family: 'Cyber Gloom'; /* Apply the custom font */
+    font-family: 'Cyber Gloom Regular', sans-serif; /* Apply the exact font name */
     font-size: 2.2em;
     text-transform: uppercase;
     color: yellow;
     text-decoration: none;
-    letter-spacing: 3px;
+    letter-spacing: 3px; /* Adds more spacing for a futuristic look */
     text-shadow: 0 0 10px rgba(255, 255, 0, 0.8), 0 0 20px rgba(255, 255, 0, 0.6), 0 0 30px rgba(255, 255, 0, 0.4);
 }
-
-
 
 .portfolio-link:hover {
     color: #fff; /* Change color on hover for contrast */
