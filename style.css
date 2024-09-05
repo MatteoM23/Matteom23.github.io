@@ -6,7 +6,7 @@
     font-style: normal;
 }
 
-/* Portfolio Name */
+/* Portfolio Name Styling */
 .portfolio-link {
     font-family: 'Cyber Gloom', sans-serif;
     font-size: 2.2em;
@@ -14,8 +14,7 @@
     color: white;
     text-decoration: none;
     letter-spacing: 3px;
-    border: 2px solid transparent; /* No border initially */
-    transition: all 0.4s ease;
+    transition: color 0.4s ease, transform 0.4s ease;
 }
 
 .portfolio-link:hover {
@@ -40,9 +39,56 @@ body {
     min-height: 100vh;
 }
 
+/* White Background for Landing Page */
+.landing-container {
+    background-color: white;
+    padding: 80px 20px;
+    text-align: center;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.landing-container h1 {
+    font-size: 3em;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.landing-container p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Button Styling for Landing Page */
+.landing-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.landing-btn {
+    padding: 15px 30px;
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    border-radius: 5px;
+    border: 2px solid white; /* White border initially */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.landing-btn:hover {
+    background-color: #4285f4; /* Blue background on hover */
+    border-color: #4285f4; /* Blue border on hover */
+    color: white; /* Text remains white */
+}
+
 /* Solid Black Header and Footer */
 header {
-    background-color: #000; /* Solid black */
+    background-color: #000;
     padding: 1em 2em;
     display: flex;
     justify-content: center;
@@ -60,55 +106,33 @@ nav ul li {
     margin: 0 20px;
 }
 
-/* Modern Button-Style Navigation */
 nav ul li a {
     padding: 10px 20px;
-    color: white; /* Text is plain white initially */
+    color: white;
     text-decoration: none;
     font-weight: 700;
-    border: 2px solid transparent; /* No border initially */
+    border: 2px solid transparent;
     border-radius: 5px;
     transition: all 0.3s ease;
 }
 
 nav ul li a:hover {
     background-color: #4285f4; /* Blue background on hover */
-    color: white; /* Text remains white */
-    border-color: #4285f4; /* Border gets blue color */
+    color: white;
+    border-color: #4285f4; /* Blue border on hover */
 }
 
-/* Main Content Styling */
-main {
-    flex-grow: 1;
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-/* Portfolio Section Grid */
-.portfolio-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    width: 100%;
-}
-
-/* Project Card Styling */
+/* Project Cards */
 .project-card {
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 15px;
-    overflow: hidden; /* Ensures content stays within the rounded edges */
+    overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
-    padding: 0; /* Remove padding around the image */
+    padding: 0;
 }
 
-/* Flush the image with the top of the card, keeping rounded corners */
 .project-card img {
     width: 100%;
     height: 180px;
@@ -128,13 +152,12 @@ main {
     filter: brightness(90%);
 }
 
-/* Project Info */
 .project-info {
     padding: 20px;
     text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
-    background-color: rgba(255, 255, 255, 0.9); /* Ensure white background inside card */
 }
 
 .project-info h2 {
@@ -166,34 +189,9 @@ main {
     transform: scale(1.05);
 }
 
-/* Floating White Background for Text Sections */
-.page-container {
-    background-color: rgba(255, 255, 255, 0.9); /* White floating background */
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    max-width: 800px;
-    margin: 20px auto;
-    text-align: center;
-}
-
-.page-container h1 {
-    font-family: 'Playfair Display', serif;
-    color: #2c3e50;
-    margin-bottom: 20px;
-    font-size: 2em;
-}
-
-.page-container p {
-    font-family: 'Roboto', sans-serif;
-    color: #555;
-    font-size: 1.1em;
-    line-height: 1.6;
-}
-
 /* Footer Styling */
 footer {
-    background-color: #000; /* Solid black */
+    background-color: #000;
     color: white;
     text-align: center;
     padding: 20px;
@@ -228,6 +226,10 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .landing-buttons {
+        flex-direction: column;
+    }
+
     .portfolio-grid {
         grid-template-columns: 1fr;
     }
