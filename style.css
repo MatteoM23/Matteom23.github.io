@@ -1,10 +1,25 @@
-/* Load the Cyber Trunk Font */
+/* Load the Cyber Trunk Font from the root directory */
 @font-face {
     font-family: 'Cyber Trunk';
-    src: url('Cyber Trunk.otf') format('opentype'); /* Ensure the correct path to the font */
+    src: url('Cyber Trunk.otf') format('opentype'); /* No folder, direct path */
     font-weight: normal;
     font-style: normal;
 }
+
+/* Use the Cyber Trunk font for the Portfolio name */
+.portfolio-link {
+    font-family: 'Cyber Trunk', sans-serif; /* Apply the custom font */
+    font-size: 1.8em;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 2px; /* Adds spacing for a futuristic look */
+}
+
+.portfolio-link:hover {
+    color: #66a6ff;
+}
+
 
 /* General Body Styling */
 body {
