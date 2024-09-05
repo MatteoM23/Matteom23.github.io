@@ -1,16 +1,12 @@
-/* Import Orbitron for Cybertruck-themed Font */
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
-/* Import Roboto for clean, modern look */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-/* Import Playfair Display for elegant headings */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+/* Import Google Fonts in CSS */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Playfair+Display:wght@400;700&family=Roboto:wght@400;700&display=swap');
 
 /* General Body Styling */
 body {
     font-family: 'Roboto', sans-serif; /* Base font for body text */
     margin: 0;
     padding: 0;
-    background-image: url('websitebg.webp');
+    background-image: url('websitebg.webp'); /* Ensure correct path to image */
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
@@ -56,6 +52,7 @@ nav ul li a:hover {
 /* Cybertruck-Themed Font for Portfolio Link */
 .portfolio-link {
     font-family: 'Orbitron', sans-serif; /* Orbitron font for Cybertruck aesthetic */
+    font-weight: 700;
     font-size: 1.8em;
     text-transform: uppercase;
     color: white;
