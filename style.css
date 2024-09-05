@@ -6,7 +6,7 @@
     font-style: normal;
 }
 
-/* Use the Cyber Gloom font for the Portfolio name */
+/* Portfolio Name */
 .portfolio-link {
     font-family: 'Cyber Gloom', sans-serif;
     font-size: 2.2em;
@@ -14,12 +14,14 @@
     color: white;
     text-decoration: none;
     letter-spacing: 3px;
-    transition: color 0.4s ease, transform 0.4s ease;
+    border: 2px solid transparent; /* No border initially */
+    transition: all 0.4s ease;
 }
 
 .portfolio-link:hover {
-    color: #00d1ff; /* Futuristic light blue color */
-    transform: translateY(-3px);
+    border: 2px solid #4285f4; /* Blue border outline when hovered */
+    color: white; /* Text stays white */
+    background-color: transparent; /* No fill in background */
 }
 
 /* General Body Styling */
@@ -58,23 +60,21 @@ nav ul li {
     margin: 0 20px;
 }
 
-/* Filled Blue Button Style with White Text */
+/* Modern Button-Style Navigation */
 nav ul li a {
     padding: 10px 20px;
-    color: white;
+    color: white; /* Text is plain white initially */
     text-decoration: none;
     font-weight: 700;
-    background-color: #4285f4; /* Google-like dark blue */
-    border: 2px solid #4285f4;
+    border: 2px solid transparent; /* No border initially */
     border-radius: 5px;
     transition: all 0.3s ease;
 }
 
 nav ul li a:hover {
-    background-color: #0a62c3; /* Darker blue on hover */
-    color: white;
-    font-weight: bold; /* Slightly bold on hover */
-    transform: scale(1.02); /* Slight increase on hover */
+    background-color: #4285f4; /* Blue background on hover */
+    color: white; /* Text remains white */
+    border-color: #4285f4; /* Border gets blue color */
 }
 
 /* Main Content Styling */
