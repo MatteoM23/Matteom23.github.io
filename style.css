@@ -1,6 +1,6 @@
 /* Load the Cyber Gloom Font from the root directory */
 @font-face {
-    font-family: 'Cyber Gloom';
+    font-family: 'Cyber gloom';
     src: url('Cyber gloom.otf') format('opentype'); /* Ensure correct file name */
     font-weight: normal;
     font-style: normal;
@@ -8,7 +8,7 @@
 
 /* Use the Cyber Gloom font for the Portfolio name */
 .portfolio-link {
-    font-family: 'Cyber Gloom', sans-serif; /* Apply the custom font */
+    font-family: 'Cyber gloom', sans-serif; /* Apply the custom font */
     font-size: 2.2em;
     text-transform: uppercase;
     color: yellow;
