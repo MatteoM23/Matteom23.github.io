@@ -14,16 +14,17 @@
     color: white;
     text-decoration: none;
     letter-spacing: 3px;
-    border: 2px solid transparent; /* Initially no border */
+    border: 2px solid transparent;
     border-radius: 5px;
     padding: 10px 20px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .portfolio-link:hover {
-    background-color: #4285f4; /* Blue background on hover */
+    background-color: #4285f4;
     color: white;
     border-color: #4285f4;
+    transform: scale(1.05);
 }
 
 /* General Body Styling */
@@ -31,46 +32,28 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('websitebg.webp');
+    background: url('websitebg.webp') no-repeat center center fixed;
     background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
     color: #333;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    transition: opacity 0.5s ease;
+}
+
+body.fade-in {
+    opacity: 0;
+    animation: fadeIn ease 0.5s forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 /* White Background for Content Sections */
-.page-container {
-    background-color: rgba(255, 255, 255, 0.9); /* Slight transparency for a clean look */
-    padding: 40px 20px;
-    color: #333;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    max-width: 800px; /* Center the content */
-    margin: 40px auto;
-    text-align: center;
-}
-
-.page-container h1 {
-    font-size: 2.5em;
-    font-family: 'Playfair Display', serif;
-    color: #2c3e50;
-    margin-bottom: 20px;
-}
-
-.page-container p {
-    font-size: 1.2em;
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
-    color: #555;
-}
-
-/* Centered Box for Landing Page Text */
-.landing-container {
-    background-color: rgba(255, 255, 255, 0.9); /* Same white background as other sections */
+.page-container, .landing-container {
+    background-color: rgba(255, 255, 255, 0.9);
     padding: 40px 20px;
     color: #333;
     border-radius: 10px;
@@ -80,21 +63,20 @@ body {
     text-align: center;
 }
 
-.landing-container h1 {
-    font-size: 2.5em;
+.page-container h1, .landing-container h1 {
     font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
     color: #2c3e50;
     margin-bottom: 20px;
 }
 
-.landing-container p {
+.page-container p, .landing-container p {
     font-size: 1.2em;
-    font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     color: #555;
 }
 
-/* Button Styling for Landing Page */
+/* Button Styling */
 .landing-buttons {
     display: flex;
     gap: 20px;
@@ -102,40 +84,40 @@ body {
     margin-top: 30px;
 }
 
-.landing-btn {
+.landing-btn, .project-info a {
     padding: 15px 30px;
     background-color: transparent;
     color: white;
     text-decoration: none;
     font-size: 1.1em;
     border-radius: 5px;
-    border: 2px solid white; /* White border initially */
-    transition: background-color 0.3s ease, color 0.3s ease;
+    border: 2px solid white;
+    transition: all 0.3s ease;
 }
 
-.landing-btn:hover {
-    background-color: #4285f4; /* Blue background on hover */
-    border-color: #4285f4; /* Blue border on hover */
-    color: white; /* Text remains white */
+.landing-btn:hover, .project-info a:hover {
+    background-color: #4285f4;
+    border-color: #4285f4;
+    color: white;
+    transform: scale(1.05);
 }
 
 /* Solid Black Header and Footer */
-header {
-    background-color: rgba(0, 0, 0, 0.9); /* Solid black for header */
+header, footer {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
     padding: 1em 2em;
-    display: flex;
-    justify-content: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
+header {
+    display: flex;
+    justify-content: center;
+}
+
 footer {
-    background-color: rgba(0, 0, 0, 0.9); /* Solid black for footer */
-    color: white;
+    margin-top: auto;
     text-align: center;
-    padding: 20px;
-    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
-    width: 100%;
-    position: relative;
 }
 
 footer a {
@@ -153,10 +135,11 @@ nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 nav ul li {
-    margin: 0 20px;
+    margin: 0 10px;
 }
 
 nav ul li a {
@@ -170,19 +153,19 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #4285f4; /* Blue background on hover */
+    background-color: #4285f4;
+    border-color: #4285f4;
     color: white;
-    border-color: #4285f4; /* Blue border on hover */
 }
 
 /* Project Cards */
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* 4 columns max */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 20px;
     width: 100%;
     max-width: 1200px;
-    margin: 40px auto; /* Center the grid */
+    margin: 40px auto;
 }
 
 .project-card {
@@ -190,17 +173,14 @@ nav ul li a:hover {
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .project-card img {
     width: 100%;
     height: 180px;
     object-fit: cover;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    transition: transform 0.3s ease, filter 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .project-card:hover {
@@ -216,9 +196,6 @@ nav ul li a:hover {
 .project-info {
     padding: 20px;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.9);
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
 }
 
 .project-info h2 {
@@ -229,42 +206,8 @@ nav ul li a:hover {
 }
 
 .project-info p {
-    font-family: 'Roboto', sans-serif;
     font-size: 1em;
     color: #555;
-}
-
-/* GitHub Buttons */
-.project-info a {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 15px;
-    background-color: transparent;
-    color: #4285f4;
-    border-radius: 5px;
-    text-decoration: none;
-    border: 2px solid #4285f4; /* Blue border for consistency */
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.project-info a:hover {
-    background-color: #4285f4;
-    color: white;
-    transform: scale(1.05);
-}
-
-/* Sticky Footer Adjustment */
-html, body {
-    height: 100%;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-}
-
-footer {
-    margin-top: auto;
 }
 
 /* Responsive Design */
@@ -277,7 +220,11 @@ footer {
         grid-template-columns: 1fr;
     }
 
+    nav ul {
+        flex-direction: column;
+    }
+
     nav ul li {
-        margin: 0 10px;
+        margin: 10px 0;
     }
 }
