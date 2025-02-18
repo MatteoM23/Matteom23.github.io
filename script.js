@@ -59,7 +59,7 @@ const projects = [
         githubLink: "https://github.com/example/ecommerce-site"
     },
     {
-        title: "Game of Life",
+        title: "Game of Life Video Game",
         description: "Implementation of Conway's Game of Life.",
         imageUrl: "gameoflife.png",
         githubLink: "https://github.com/example/game-of-life"
