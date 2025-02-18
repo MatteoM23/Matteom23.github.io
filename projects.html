@@ -3,25 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Projects | Matteo Michitti Codebase</title>
-
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
-    <!-- Link to CSS -->
     <link rel="stylesheet" href="style.css">
-
-    <!-- Favicon -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body class="projects-page">
     <header>
         <nav>
             <ul class="navigation-menu">
-                <li class="nav-logo">
-                    <a href="https://matteom23.github.io" class="portfolio-link">Matteo Michitti Codebase</a>
-                </li>
+                <li class="nav-logo"><a href="index.html" class="portfolio-link">Matteo Michitti Codebase</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
@@ -30,36 +21,14 @@
 
     <main>
         <section class="portfolio-grid">
-            <article class="project-card">
-                <img src="weatherporfolioimage.png" alt="Weather App">
-                <div class="project-info">
-                    <h2>Weather App</h2>
-                    <p>A weather app that fetches live weather data from an API for any city.</p>
-                    <a href="https://github.com/MatteoM23/Weatherapp" target="_blank" class="github-link">View on GitHub</a>
-                </div>
-            </article>
-
-            <article class="project-card">
-                <img src="randompasswordgenpic.png" alt="Random Password Generator">
-                <div class="project-info">
-                    <h2>Random Password Generator</h2>
-                    <p>An advanced tool that generates complex passwords with a single click.</p>
-                    <a href="https://github.com/MatteoM23/AdvancedPasswordGenerator" target="_blank" class="github-link">View on GitHub</a>
-                </div>
-            </article>
-
-            <!-- Add other projects here -->
-
+            <!-- Projects will be dynamically added here by JavaScript -->
         </section>
     </main>
 
     <footer>
-        <p>&copy; <span id="dynamicYear"></span> Matteo Michitti Codebase | <a href="privacy-policy.html">Privacy Policy</a></p>
+        <p>© <span id="dynamicYear"></span> Matteo Michitti Codebase | <a href="privacy-policy.html">Privacy Policy</a></p>
     </footer>
 
-    <script>
-        // Dynamically set the current year in the footer
-        document.getElementById('dynamicYear').textContent = new Date().getFullYear();
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
