@@ -41,12 +41,6 @@ const projects = [
         githubLink: "https://github.com/example/blog-platform"
     },
     {
-        title: "Image Gallery",
-        description: "A responsive gallery for displaying images.",
-        imageUrl: "gallery.png",
-        githubLink: "https://github.com/example/image-gallery"
-    },
-    {
         title: "Chat Application",
         description: "Real-time messaging app using WebSocket.",
         imageUrl: "chat.png",
@@ -57,12 +51,6 @@ const projects = [
         description: "A mock e-commerce site with a shopping cart.",
         imageUrl: "ecommerce.png",
         githubLink: "https://github.com/example/ecommerce-site"
-    },
-    {
-        title: "Game of Life Video Game",
-        description: "Implementation of Conway's Game of Life.",
-        imageUrl: "gameoflife.png",
-        githubLink: "https://github.com/example/game-of-life"
     }
 ];
 
