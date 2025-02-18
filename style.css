@@ -6,27 +6,6 @@
     font-style: normal;
 }
 
-/* Portfolio Name Styling */
-.portfolio-link {
-    font-family: 'Cyber Gloom', sans-serif;
-    font-size: 2.2em;
-    text-transform: uppercase;
-    color: white;
-    text-decoration: none;
-    letter-spacing: 3px;
-    border: 2px solid transparent;
-    border-radius: 5px;
-    padding: 10px 20px;
-    transition: all 0.3s ease;
-}
-
-.portfolio-link:hover {
-    background-color: #4285f4;
-    color: white;
-    border-color: #4285f4;
-    transform: scale(1.05);
-}
-
 /* General Body Styling */
 body {
     font-family: 'Roboto', sans-serif;
@@ -51,73 +30,122 @@ body.fade-in {
     to { opacity: 1; }
 }
 
-/* White Background for Content Sections */
-.page-container, .landing-container {
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 40px 20px;
-    color: #333;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
-    margin: 40px auto;
-    text-align: center;
-}
-
-.page-container h1, .landing-container h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.5em;
-    color: #2c3e50;
-    margin-bottom: 20px;
-}
-
-.page-container p, .landing-container p {
-    font-size: 1.2em;
-    line-height: 1.6;
-    color: #555;
-}
-
-/* Button Styling */
-.landing-buttons {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    margin-top: 30px;
-}
-
-.landing-btn, .project-info a {
-    padding: 15px 30px;
-    background-color: transparent;
+/* Portfolio Name Styling */
+.portfolio-link {
+    font-family: 'Cyber Gloom', sans-serif;
+    font-size: 1.8em;
+    text-transform: uppercase;
     color: white;
     text-decoration: none;
-    font-size: 1.1em;
-    border-radius: 5px;
-    border: 2px solid white;
+    letter-spacing: 2px;
+    padding: 10px 20px;
     transition: all 0.3s ease;
 }
 
-.landing-btn:hover, .project-info a:hover {
-    background-color: #4285f4;
-    border-color: #4285f4;
-    color: white;
-    transform: scale(1.05);
+.portfolio-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #4285f4;
 }
 
-/* Solid Black Header and Footer */
-header, footer {
-    background-color: rgba(0, 0, 0, 0.9);
-    color: white;
-    padding: 1em 2em;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-
+/* Header Styling */
 header {
-    display: flex;
-    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 1em;
+    text-align: center;
 }
 
-footer {
-    margin-top: auto;
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #4285f4;
+}
+
+/* Project Grid */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.project-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.project-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.project-info {
+    padding: 15px;
     text-align: center;
+}
+
+.project-info h2 {
+    font-size: 1.2em;
+    margin: 0 0 10px;
+    color: #2c3e50;
+}
+
+.project-info p {
+    font-size: 0.9em;
+    margin: 0 0 10px;
+    color: #666;
+}
+
+.project-info a {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #4285f4;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.8em;
+    transition: background-color 0.3s ease;
+}
+
+.project-info a:hover {
+    background-color: #357ae8;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+    font-size: 0.9em;
 }
 
 footer a {
@@ -129,102 +157,9 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/* Navigation Bar Styling */
-nav ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-nav ul li {
-    margin: 0 10px;
-}
-
-nav ul li a {
-    padding: 10px 20px;
-    color: white;
-    text-decoration: none;
-    font-weight: 700;
-    border: 2px solid transparent;
-    border-radius: 5px;
-    transition: all 0.3s ease;
-}
-
-nav ul li a:hover {
-    background-color: #4285f4;
-    border-color: #4285f4;
-    color: white;
-}
-
-/* Project Cards */
-.project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
-    width: 100%;
-    max-width: 1200px;
-    margin: 40px auto;
-}
-
-.project-card {
-    background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
-}
-
-.project-card img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    transition: all 0.3s ease;
-}
-
-.project-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4);
-}
-
-.project-card:hover img {
-    transform: scale(1.05);
-    filter: brightness(90%);
-}
-
-.project-info {
-    padding: 20px;
-    text-align: center;
-}
-
-.project-info h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.5em;
-    margin-bottom: 10px;
-    color: #2c3e50;
-}
-
-.project-info p {
-    font-size: 1em;
-    color: #555;
-}
-
 /* Responsive Design */
 @media (max-width: 768px) {
-    .landing-buttons {
-        flex-direction: column;
-    }
-
     .project-grid {
         grid-template-columns: 1fr;
-    }
-
-    nav ul {
-        flex-direction: column;
-    }
-
-    nav ul li {
-        margin: 10px 0;
     }
 }
