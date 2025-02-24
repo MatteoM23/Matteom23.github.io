@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Matteo Michitti Codebase</title>
+    <title>Matteo Michitti Projects</title>
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -17,40 +17,27 @@
 </head>
 <body>
     <header>
-    <nav>
-        <ul class="navigation-menu">
-            <li class="nav-logo">
-                <!-- Link to the landing page (index.html or root "/") -->
-                <a href="index.html" class="portfolio-link">Matteo Michitti Codebase</a>
-            </li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+        <nav>
+            <ul class="navigation-menu">
+                <li class="nav-logo">
+                    <!-- Link to the landing page (index.html or root "/") -->
+                    <a href="index.html" class="portfolio-link">Matteo Michitti Codebase</a>
+                </li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-
     <main>
-        <div class="landing-container">
-            <h1>Welcome to Matteo Michitti's Codebase</h1>
-            <p>Explore my work in web development, AI, and software engineering.</p>
-            <p>Click below to view my projects or get in touch!</p>
-
-            <div class="landing-buttons">
-                <a href="projects.html" class="landing-btn">View Projects</a>
-                <a href="contact.html" class="landing-btn">Contact Me</a>
-            </div>
-        </div>
+        <div class="project-grid"></div>
     </main>
 
     <footer>
-        <p>&copy; <span id="dynamicYear"></span> Matteo Michitti Codebase | <a href="privacy-policy.html">Privacy Policy</a></p>
+        <p>© <span id="dynamicYear"></span> Matteo Michitti Codebase | <a href="privacy-policy.html">Privacy Policy</a></p>
     </footer>
 
-    <script>
-        // Dynamically set the current year in the footer
-        document.getElementById('dynamicYear').textContent = new Date().getFullYear();
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
