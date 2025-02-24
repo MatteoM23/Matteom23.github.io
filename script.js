@@ -31,7 +31,7 @@ const projects = [
     {
         title: "Todo List App",
         description: "A simple app to manage daily tasks.",
-        imageUrl: "image (5).jpg",
+        imageUrl: "blog.png",
         githubLink: "https://github.com/MatteoM23/Todo-List-App/tree/main"
     },
     {
