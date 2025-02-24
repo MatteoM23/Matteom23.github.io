@@ -43,8 +43,8 @@ const projects = [
     {
         title: "Chat Application",
         description: "Real-time messaging app using WebSocket.",
-        imageUrl: "chat.png", // Ensure this file exists
-        githubLink: "https://github.com/example/chat-app"
+        imageUrl: "image7.png", // Ensure this file exists
+        githubLink: "https://github.com/MatteoM23/realtimechatapp"
     },
     {
         title: "E-commerce Site",
