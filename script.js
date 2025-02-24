@@ -52,7 +52,7 @@ const projects = [
     {
         title: "E-commerce Site",
         description: "A mock e-commerce site with a shopping cart.",
-        imageUrl: "ecommerce.png",
+        imageUrl: "png-clipart-online-shopping-e-commerce-retail-digital-marketing-e-commerce-text-retail-thumbnail.png",
         githubLink: "https://github.com/example/ecommerce-site",
         liveSiteLink: "https://matteom23.github.io/mockeccommercesiteexample/"
     }
