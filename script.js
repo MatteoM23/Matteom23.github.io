@@ -26,7 +26,7 @@ const projects = [
         title: "A Calculator",
         description: "A simple Python-based calculator.",
         imageUrl: "calculator.png", // Ensure this file exists
-        githubLink: "https://github.com/example/project2"
+        githubLink: "https://github.com/MatteoM23/simplepythoncalculator"
     },
     {
         title: "Todo List App",
