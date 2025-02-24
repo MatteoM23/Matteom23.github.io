@@ -23,7 +23,7 @@ const projects = [
         githubLink: "https://github.com/MatteoM23/YahoofinanceDataScraper"
     },
     {
-        title: "Calculator",
+        title: "A Calculator",
         description: "A simple Python-based calculator.",
         imageUrl: "calculator.png",
         githubLink: "https://github.com/example/project2"
