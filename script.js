@@ -37,7 +37,7 @@ const projects = [
     {
         title: "Blog Platform",
         description: "A personal blogging platform with basic CRUD operations.",
-        imageUrl: "image (6).png",
+        imageUrl: "image6.png",
         githubLink: "https://github.com/MatteoM23/blog"
     },
     {
